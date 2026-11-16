@@ -24,7 +24,7 @@ jobs:
       - name: Check
         run: node --check src/index.js
 
-      - name: Testes de modo que o workflow falhe em caso de erro nos testes
+      - name: Testes
         run: npm test
         if: failure()
 
