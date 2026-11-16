@@ -14,7 +14,7 @@ after(() => server.close());
 test("GET /hello", async () => {
   const res = await fetch(`${baseUrl}/hello`);
   assert.strictEqual(res.status, 200);
-  assert.deepStrictEqual(await res.json(), { message: "Hello, World asdad!" });
+  assert.deepStrictEqual(await res.json(), { message: "Hello, World!" });
 });
 
 test("GET /healthy", async () => {
