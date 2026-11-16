@@ -1,5 +1,11 @@
 name: Node
 
+on:
+  pull_request:
+    branches:
+      - develop
+    types:
+      - accepted
 
 jobs:
   build:
@@ -19,4 +25,7 @@ jobs:
 
       - name: Check
         run: node --check src/index.js
+
+      - name: Testes
+        run: npm test
 

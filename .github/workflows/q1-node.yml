@@ -1,6 +1,15 @@
 name: Node
 
-
+on:
+  push:
+    branches:
+      - feature/*
+    paths:
+      - src/**
+      - dockerfile
+      - package.json
+      - package-lock.json
+    
 jobs:
   build:
     runs-on: ubuntu-latest
