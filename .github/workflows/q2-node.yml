@@ -28,6 +28,5 @@ jobs:
 
       - name: Testes
         run: npm test
-        if: failure()
 
       

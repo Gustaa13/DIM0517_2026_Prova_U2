@@ -26,7 +26,6 @@ jobs:
 
       - name: Testes
         run: npm test
-        if: failure()
 
       - name: Constroi imagem docker
         run: docker build -t node-app .
